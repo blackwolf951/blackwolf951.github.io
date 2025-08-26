@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>義大開發資訊室POS裝機相關教學</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /*  CSS設定  */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #01814a;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 0 20px 50px;
+        }
+
+        section {
+            background-color: #d6ccc2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 0 20px 50px;
+            right: 5vw;
+        }
+
+        section img {
+            font-family: Arial, sans-serif;
+            margin: 0;
+
+            right: 5vw;
+            border: 1px solid #3d3d40;
+            border-radius: 20px;
+        }
+
+        header ul {
+            position: absolute;
+            right: 5vw;
+            top: 0;
+            line-height: 120px;
+        }
+
+        header li {
+            display: inline;
+            margin-right: 4vw;
+        }
+
+        main {
+            background-color: #BEBEBE;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px 0 400px 50px;
+        }
+        .zoomable {
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .zoomed {
+            transform: scale(2); /* 你也可以改成 1.5 或 3 倍 */
+            cursor: zoom-out;
+            z-index: 999;
+            position: relative;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>義大開發資訊室POS裝機相關教學</h1>
+        <h1>EDA IT Learn Website</h1>
+        <li><a href="file://10.20.1.160/eda-it/%E5%AD%90%E6%96%87/eda_edu_learn_web/web.html">回到主頁</a></li>
+        <nav>
+            <ul>
+                <li><a href="https://eip.edaworld.com.tw/eip/top">前往EIP</a></li>
+                <li><a href="http://ems.edaworld.com.tw/IMS_EDA/kernel/login.asp">前往IMS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>尚未做好網頁</h2>
+        <h2>裝機流程SOP教學</h2>
+        <h2>流程說明</h2>
+        <p>1.辨別、紀錄POS機號</p>
+        <p>2.刪除資料庫內自營紀錄</p>
+        <p>3.重新下傳POS資料</p>
+        <p>4.備份銷售資料</p>
+        <p>5.執行換機作業</p>
+        <p>6.確認是否換機成功</p>
+        <p>7.若失敗 拋回備份資料</p>
+                    
+        <section>
+            <h2>辨別、紀錄POS機號</h2>
+                <p>一般類別POS_類別入帳</p>
+                <p>自營POS_商品條碼入帳</p>
+                <p> </p>
+                <p>一般POS_重新下傳POS資料</p>
+                <p>自營POS_多一刪除資料庫的步驟</p>
+
+        </section>
+        
+        
+        <p> </p>
+
+        <section>
+            <h2>刪除資料庫自營紀錄</h2>
+            <img src="jpg/set/1.jpg" alt="圖片1" width="200" height="150" />
+
+        </section>
+        <p> </p>
+        
+        <section>
+            <h2>重新下傳POS資料</h2>
+            <img src="jpg/set/2.jpg" alt="圖片1" width="200" height="150" />
+
+            
+        </section>
+
+
+        <p> </p>
+        
+        <section>
+        <h2>備份銷售資料</h2>
+            <img src="jpg/set/3_1.png" alt="圖片1" width="200" height="150" />
+            <img src="jpg/set/3_2.png" alt="圖片2" width="200" height="150" />
+            <p>將server上該POS機今日的log檔使用POS工具備份至桌面</p>
+            <p>新功能的POS工具在 Y:\1_值班SOP\POSQuery\POSQuery.exe</p>
+            <p>點擊後會將檔案抓至個人PC桌面，需在檔名後方加上2025</p>
+            
+
+        <p> </p>
+        <section>
+            <h2>更換POS</h2>
+            <p>建議安裝步驟</p>
+            <p>故障POS關機</p>
+            <p>備份SERVER上銷售紀錄檔</p>
+            <p>安裝新機器</p>
+            <p>設定換機作業</p>
+            <p>開機</p>
+            <p>登入銷售後確認是否自動抓取資料</p>
+            <p>若換機失敗 將備份的Log檔覆蓋回本機Log檔</p>
+            <p>進入銷售畫面確認資料復原無誤</p>
+            
+            <h2>換機作業</h2>
+            <p>安裝新POS後，執行換裝設定</p>
+            <p>如同裝機設定POS機號、櫃號、IP等</p>
+            <img src="jpg/set/4.png" alt="圖片1" width="200" height="150" />
+
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機作業2</h2>
+            
+            <p>輸入完所有設定後，按下儲存</p>
+            <p>按下確定並等待POS自動關機</p>
+            <p>若是按下結束作業會導致換機失敗</p>
+            <img src="jpg/set/5.png" alt="圖片1" width="200" height="150" />
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機作業3</h2>
+            <p>換裝結束，確認原銷售資料是否有成功入新POS</p>
+            <p>交易序號不為1開頭、即時業績查詢有今日業績</p>
+            <img src="jpg/set/6_1.png" alt="圖片1" width="200" height="150" />
+            <img src="jpg/set/6_2.png" alt="圖片2" width="200" height="150" />
+            <h2>換機作業 可能失敗原因</h2>
+            <p>Server資料量過大 搜尋至Time Out</p>
+            <p>自行按下結束作業或系統關機而非POS自動關機</p>
+            <p>設定錯誤或網路異常等情況</p>
+            <p>只要換機失敗會造成POS本機帳務遺失</p>
+            <p>需進行備份Log檔拋回動作</p>
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機失敗 使用備份檔案1</h2>
+            <p>假設換機失敗_帳務消失_回到辦公室連線現場POS機_將備份檔案拋回POS機內</p>
+            <p>假設POS IP為10.23.12.45</p>
+            <p>個人PC端檔案總管輸入\\10.23.12.45</p>
+            <p>將剛剛從Server備份的銷售紀錄檔案覆蓋新POS</p>
+            <p>\\10.23.12.45\rslpos\POSLOG 內的L檔_檔名設定相同後覆蓋</p>
+
+            <img src="jpg/set/7.png" alt="圖片1" width="200" height="150" />
+            
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機失敗 使用備份檔案2</h2>
+            <p>也可提前將備份的L檔放入POS小型USB，於現場POS換機失敗時，插入POS並手動將L檔補回</p>
+            <p>POS進入系統維護畫面後，螢幕左側有兩個小白點，用指甲點擊白點中間處，開啟Linux使用者介面</p>
+            <img src="jpg/set/8_1.png" alt="圖片1" width="200" height="150" />
+            <img src="jpg/set/8_2.png" alt="圖片2" width="200" height="150" />
+            
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機失敗 使用備份檔案3</h2>
+            <p>進入使用者介面後，依照“家目錄/RSLPOS/POSLOG”路徑，找到當天L檔並刪除</p>
+            <img src="jpg/set/9_1.png" alt="圖片1" width="200" height="150" />
+            <img src="jpg/set/9_2.png" alt="圖片2" width="200" height="150" />
+            
+
+            
+        </section>
+
+
+        <p> </p>
+        <section>
+            <h2>換機失敗 使用備份檔案4</h2>
+            <p>將檔案丟入回收桶后，安裝上小型USB，並將先前備份檔案複製到“家目錄/RSLPOS/POSLOG”在按右上角X退出介面，並結束作業</p>
+            <p>POS重啟後，重新進入銷售作業，查看帳務是否有還原</p>
+            <img src="jpg/set/10_1.png" alt="圖片1" width="200" height="150" />
+            <img src="jpg/set/10_2.png" alt="圖片2" width="200" height="150" />
+           
+            <h2>確認銷售資料是否復原</h2>
+            <p>檔案覆蓋後，按下版本更新，並重新登入銷售畫面</p>
+            <p>查看POS交易序號是否有延續故障POS的序號</p>
+            <p>請專櫃人員確認業績數字無誤</p>
+
+            
+        </section>
+
+
+        <p> </p>
+
+        
+        </section>
+    </main>
+
+
+
+    <article>
+        <section>
+            <h2>這裡是SOP說明步驟影片</h2>
+
+            <video width="400" controls>
+                <source src="POS_set/POS_set.mp4" type="video/mp4">
+
+            您的瀏覽器不支援影片播放
+            </video>
+        </section>
+    </article>
+    <footer>
+        <p>這邊是網頁最底下拉</p>
+    </footer>
+    <script>
+        function toggleZoom(img) {
+            img.classList.toggle("zoomed");
+            }
+    </script>
+</body>
+</html>
