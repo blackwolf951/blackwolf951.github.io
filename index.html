@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="王子文的個人作品集 - 電機工程與生醫工程跨領域專業">
+    <title>王子文 | 個人作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== 導覽列 ========== -->
+    <header>
+        <nav aria-label="主要導覽">
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#medical">大學專題</a></li>
+                <li><a href="#portfolio">其他作品</a></li>
+                <li><a href="#awards">獎項與專利</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ========== 首頁區塊 ========== -->
+        <section id="home">
+            <div class="home-container">
+                <div class="home-text">
+                    <h1 class="fade-in-up">王子文</h1>
+                    <p class="subtitle fade-in-up" style="animation-delay: 0.2s">電機工程 & 生醫工程跨領域背景</p>
+                    
+                    <!-- 專業標籤雲 -->
+                    <div class="tags-container fade-in-up" style="animation-delay: 0.4s">
+                        <span class="tag">IoT 系統開發</span>
+                        <span class="tag">MQTT 通訊協議</span>
+                        <span class="tag">ESP32 嵌入式</span>
+                        <span class="tag">智慧醫療</span>
+                        <span class="tag">感測器整合</span>
+                        <span class="tag">Python / C++</span>
+                        <span class="tag">資料分析</span>
+                        <span class="tag">FPGA 設計</span>
+                    </div>
+                    
+                    <!-- 數據統計 -->
+                    <div class="stats-grid fade-in-up" style="animation-delay: 0.6s">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">完成專案</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">國際獎項</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="1">0</div>
+                            <div class="stat-label">發明專利</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA 按鈕 -->
+                    <div class="cta-buttons fade-in-up" style="animation-delay: 0.8s">
+                        <a href="#medical" class="btn btn-primary">查看專題作品</a>
+                        <a href="#about" class="btn btn-secondary">深入了解</a>
+                    </div>
+                </div>
+                
+                <div class="home-photo fade-in-up" style="animation-delay: 0.3s">
+                    <div class="photo-frame">
+                        <img src="picture/me.jpg" alt="王子文個人照片" loading="lazy">
+                        <div class="photo-overlay">
+                            <div class="overlay-text">跨域整合 · 創新實踐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 浮動粒子背景 -->
+            <div class="particles-container" id="particles"></div>
+        </section>
+
+        <!-- ========== 關於我區塊 ========== -->
+        <section id="about">
+            <h2>關於我</h2>
+            
+            <div class="about-content">
+                <!-- 研究動機與背景 -->
+                <article class="about-section">
+                    <h3>研究動機與背景</h3>
+                    <p>
+                        我在學士階段從生物醫學工程跨入電機工程,累積了醫學背景與電路、韌體及軟體的整合能力.在專題研究「基於 MQTT 與 API 應用於智慧尿布即時監控系統設計」中,我設計了感測器與 ESP32 物聯網平台,並透過 MQTT 與 API 實現多設備即時監控,成功驗證系統的可靠性與延遲特性.
+                    </p>
+                    <p>
+                        這段經驗使我深刻體會到:若能進一步結合低功耗積體電路設計與人工智慧健康監測模型,不僅能提升臨床照護效率,還能拓展應用至長照與精準健康.因此,我希望在國立臺灣大學精準健康碩士學位學程中,持續深化「智慧感測 + AI」的跨領域研究.
+                    </p>
+                </article>
+
+                <!-- 個人優勢 -->
+                <article class="about-section">
+                    <h3>個人優勢</h3>
+                    
+                    <div class="advantage-item">
+                        <h4><span class="icon">🏥</span> 醫學背景</h4>
+                        <p>
+                            曾就讀於生物醫學工程學系,修習解剖學、生物學及醫療器材相關課程,建立紮實的醫學基礎,對臨床應用與醫療設備運作原理具備清晰理解.
+                        </p>
+                    </div>
+                    
+                    <div class="advantage-item">
+                        <h4><span class="icon">⚡</span> 跨域專業</h4>
+                        <p>
+                            目前主修電機工程學系,修習電路學、電子學、數位邏輯、電腦輔助電路設計以及多門程式語言課程,累積電機與資訊工程的跨領域能力,具備軟硬整合與系統設計的技術基礎.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 實務經驗 -->
+                <article class="about-section">
+                    <h3>實務經驗</h3>
+                    
+                    <div class="experience-item">
+                        <h4><span class="icon">🔬</span> 醫療器材研發</h4>
+                        <p>
+                            曾參與醫鼎企業的醫療器材設計,實際接觸醫材開發流程,深入了解臨床需求與工程設計間的連結,培養了以使用者需求為導向的設計思維.
+                        </p>
+                    </div>
+                    
+                    <div class="experience-item">
+                        <h4><span class="icon">💻</span> 資訊系統維運</h4>
+                        <p>
+                            在義大開發資訊室任職,負責硬體與軟體的維護,處理百貨公司 POS 系統與網路設備問題,培養了系統整合與問題解決的實務能力.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 專題與研究成果 -->
+                <article class="about-section">
+                    <h3>專題與研究成果</h3>
+                    <p>
+                        除智慧尿布專題外,我亦參與多項物聯網應用開發,如「即時監控保鮮盒系統」與「智慧尿布監控系統」,並與高醫岡山分院及設備供應商合作,探討系統優化與臨床應用,驗證系統的可靠性與實用性.
+                    </p>
+                    <p>
+                        此外,大三暑假期間進入義大開發資訊室軟體部門,負責百貨公司 POS 系統維護,並參加綠點子創新競賽榮獲銅牌,展現將理論轉化為實務成果的能力.
+                    </p>
+                </article>
+
+                <!-- 研究展望 -->
+                <article class="about-section highlight">
+                    <h3>研究展望</h3>
+                    <p>
+                        透過這些學術與實務經驗,我能從臨床需求出發,結合醫學基礎、電機專業與資訊技術,發展具體可行的智慧醫療解決方案.我期望在臺大精準健康碩士學位學程中進一步精進研究,將成果應用於智慧醫療與精準健康領域,推動臺灣醫療科技的創新與發展.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== 技能區塊 ========== -->
+        <section id="skills">
+            <h2>技能</h2>
+            <ul>
+                <li><strong>程式設計:</strong> C++, Python, Flutter</li>
+                <li><strong>硬體控制:</strong> ESP32, MCU 開發</li>
+                <li><strong>資料分析與 IoT 系統整合</strong></li>
+                <li><strong>嵌入式系統設計與感測器應用</strong></li>
+            </ul>
+        </section>
+
+        <!-- ========== 大學專題區塊 ========== -->
+        <section id="medical">
+            <h2>大學專題 IoT 作品展示</h2>
+            
+            <!-- 專題一:智慧尿布監控系統 -->
+            <article class="project">
+                <h3>智慧尿布監控系統</h3>
+                <p>利用濕度感測器與 MQTT 協議完成即時監測與通知,提高護理效率.</p>
+                
+                <img src="picture/system.png" alt="智慧尿布系統架構圖" loading="lazy">
+                <p><strong>系統架構:</strong> 整合感測器、微控制器與雲端平台的完整 IoT 解決方案</p>
+                
+                <img src="picture/自己做的mqtt_api伺服器/mqtt_api.jpg" alt="MQTT API 伺服器介面" loading="lazy">
+                <p><strong>API 伺服器:</strong> 自行開發的 MQTT 訊息處理與轉發系統</p>
+                
+                <img src="picture/自己做的mqtt_api伺服器/sql.jpg" alt="資料庫管理介面" loading="lazy">
+                <p><strong>資料儲存:</strong> SQL 資料庫用於歷史數據查詢與分析</p>
+                
+                <img src="picture/初代醫院設備/1.jpg" alt="初代原型設備" loading="lazy">
+                <p><strong>硬體開發:</strong> 初代醫院設備原型與感測器整合</p>
+                
+                <img src="picture/尿布網頁/1.jpg" alt="監控網頁介面" loading="lazy">
+                <p><strong>使用者介面:</strong> 即時監控網頁,支援多裝置同時查看</p>
+            </article>
+
+            <!-- 專題二:智能保鮮盒系統 -->
+            <article class="project">
+                <h3>智能保鮮盒系統</h3>
+                <p>使用 IoT 技術實現即時溫濕度監控與遠端通知,延長食材保存期限.</p>
+                
+                <img src="picture/保鮮盒/圖片1.png" alt="保鮮盒系統概覽" loading="lazy">
+                <p><strong>系統概覽:</strong> 智能保鮮盒的整體設計與功能架構</p>
+                
+                <img src="picture/保鮮盒/圖片2.jpg" alt="保鮮盒硬體實作" loading="lazy">
+                <p><strong>硬體實作:</strong> 溫濕度感測器與控制電路整合</p>
+                
+                <img src="picture/保鮮盒/圖片3.jpg" alt="保鮮盒應用展示" loading="lazy">
+                <p><strong>實際應用:</strong> 食材保存效果測試與數據分析</p>
+            </article>
+        </section>
+        
+        <!-- ========== 其他作品區塊 ========== -->
+        <section id="portfolio">
+            <h2>其他作品與技能</h2>
+            
+            <!-- FPGA 晶片設計 -->
+            <article class="portfolio-item">
+                <h3>FPGA 晶片設計</h3>
+                <img src="picture/FPGA晶片設計/圖片1.png" alt="FPGA FSM 設計" loading="lazy">
+                <p><strong>設計內容:</strong> 有限狀態機 (FSM) 設計與實作</p>
+            </article>
+
+            <!-- 電腦輔助電路設計 -->
+            <article class="portfolio-item">
+                <h3>電腦輔助電路設計</h3>
+                
+                <img src="picture/電腦輔助電路設計/1753944099682.jpg" alt="電路原理圖設計" loading="lazy">
+                <p><strong>電路設計:</strong> 完整的電路原理圖繪製</p>
+                
+                <img src="picture/電腦輔助電路設計/1753944076408.jpg" alt="PCB Layout 設計" loading="lazy">
+                <p><strong>PCB Layout:</strong> 印刷電路板佈局設計</p>
+                
+                <img src="picture/電腦輔助電路設計/1753944126395.jpg" alt="3D 電路板模型" loading="lazy">
+                <p><strong>3D 模型:</strong> 電路板 3D 立體視覺化</p>
+            </article>
+
+            <!-- AI 網站應用 -->
+            <article class="portfolio-item">
+                <h3>AI 智能問答網站</h3>
+                
+                <img src="picture/AI網頁/1.jpg" alt="AI 網站介面 1" loading="lazy">
+                <img src="picture/AI網頁/2.jpg" alt="AI 網站介面 2" loading="lazy">
+                <p><strong>功能特色:</strong> 即時 AI 問答互動系統,提供智能化回饋</p>
+            </article>
+        </section>
+
+        <!-- ========== 獎項與專利區塊 ========== -->
+        <section id="awards">
+            <h2>獎項與專利</h2>
+            
+            <!-- 綠點子競賽獎項 1 -->
+            <article class="portfolio-item">
+                <h3>綠點子國際發明競賽 - 銅牌獎</h3>
+                <img src="picture/比賽/B008.jpg" alt="智慧尿布監控系統獲獎證書" loading="lazy">
+                <p><strong>獲獎作品:</strong> Smart Diaper Monitoring and Health Care Surveillance Real-Time Notification System</p>
+                <p class="award-description">智慧尿布監控與健康照護即時通知系統</p>
+            </article>
+
+            <!-- 綠點子競賽獎項 2 -->
+            <article class="portfolio-item">
+                <h3>綠點子國際發明競賽 - 銅牌獎</h3>
+                <img src="picture/比賽/B033.jpg" alt="太陽能預測系統獲獎證書" loading="lazy">
+                <p><strong>獲獎作品:</strong> Development of a Deep Learning-Based Solar Photovoltaic Field Prediction and Real-Time Monitoring Interface System</p>
+                <p class="award-description">基於深度學習的太陽能光電場預測與即時監控介面系統開發</p>
+            </article>
+
+            <!-- 專利證書 -->
+            <article class="portfolio-item">
+                <h3>發明專利</h3>
+                <img src="picture/專利/IMG_9726.JPG" alt="發明專利證書" loading="lazy">
+                <p><strong>專利認證:</strong> 正式核准之發明專利證書</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- ========== 頁尾 ========== -->
+    <footer>
+        <p>&copy; 2025 王子文. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
